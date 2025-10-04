@@ -1,3 +1,8 @@
+variable "environment" {
+  description = "Deployment environment (dev/stg/prod)"
+  type        = string
+}
+
 variable "create" {
   description = "Determines whether resources will be created"
   type        = bool

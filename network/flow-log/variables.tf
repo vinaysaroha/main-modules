@@ -16,6 +16,11 @@ variable "tags" {
   default     = {}
 }
 
+variable "environment" {
+  description = "Deployment environment (dev/stg/prod)"
+  type        = string
+}
+
 ################################################################################
 # Flow Log
 ################################################################################
