@@ -1,3 +1,8 @@
+variable "environment" {
+  description = "Deployment environment (dev/stg/prod)"
+  type        = string
+}
+
 variable "create" {
   description = "Determines whether resources will be created (affects all resources)"
   type        = bool
@@ -14,11 +19,6 @@ variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
   default     = {}
-}
-
-variable "environment" {
-  description = "Deployment environment (dev/stg/prod)"
-  type        = string
 }
 
 ################################################################################
